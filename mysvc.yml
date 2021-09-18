@@ -3,8 +3,7 @@ kind: Service
 metadata:
   name: myjava-svc
   labels:
-     app: myjava-pod
-     version: 2.7.1
+     app: myjava
 spec:
   type: NodePort
   ports:
@@ -12,7 +11,6 @@ spec:
     nodePort: 30001
     protocol: TCP
   selector:
-      app: myajava-pod
-      version: 2.7.1
+      app: myajava
 
 # -p 30001:8080
